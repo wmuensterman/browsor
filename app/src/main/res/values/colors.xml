@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="colorAccent">#0091ea</color>
+    <color name="fabIconColor">#fff</color>
+
+    <color name="colorPrimaryBaby">#3F51B5</color>
+    <color name="colorPrimaryDarkBaby">#303F9F</color>
+    <color name="colorAccentBaby">#FF4081</color>
+    <color name="imageButtonColorBaby">#3F51B5</color>
+    <color name="imageButtonIconColorBaby">#fff</color>
+
+    <color name="colorPrimaryHotdog">#F44336</color>
+    <color name="colorPrimaryDarkHotdog">#D32F2F</color>
+    <color name="colorPageHotdog">#FFEB3B</color>
+    <color name="recyclerViewItemBackgroundColorHotdog">#FFEB3B</color>
+    <color name="colorAccentHotdog">#F44336</color>
+    <color name="imageButtonColorHotdog">#F44336</color>
+    <color name="imageButtonIconColorHotdog">#fff</color>
+
+    <color name="colorPrimaryDay">#fff</color>
+    <color name="colorPrimaryDayDark">#aaa</color>
+    <color name="colorPageDay">@color/background_material_light</color>
+    <color name="recyclerViewItemBackgroundColorDay">#fff</color>
+    <color name="textOnlyTextColorDay">@color/abc_primary_text_material_light</color>
+    <color name="imageButtonColorDay">#fff</color>
+    <color name="imageButtonIconColorDay">@color/abc_primary_text_material_light</color>
+
+    <color name="colorPrimaryNight">@color/primary_material_dark</color>
+    <color name="colorPrimaryDarkNight">@color/primary_dark_material_dark</color>
+    <color name="colorPageNight">@color/background_material_dark</color>
+    <color name="recyclerViewItemBackgroundColorNight">@color/primary_material_dark</color>
+    <color name="textOnlyTextColorNight">@color/abc_primary_text_material_dark</color>
+    <color name="imageButtonColorNight">@color/primary_material_dark</color>
+    <color name="imageButtonIconColorNight">@color/abc_primary_text_material_dark</color>
+
+    <color name="colorPrimaryExtraDay">#fff</color>
+    <color name="colorPrimaryDarkExtraDay">#aaa</color>
+    <color name="colorPageExtraDay">#fff</color>
+    <color name="recyclerViewItemBackgroundColorExtraDay">#fff</color>
+    <color name="textOnlyTextColorExtraDay">#000</color>
+    <color name="imageButtonColorExtraDay">#fff</color>
+    <color name="imageButtonIconColorExtraDay">#000</color>
+
+    <color name="colorPrimaryExtraNight">@color/primary_dark_material_dark</color>
+    <color name="colorPrimaryDarkExtraNight">@color/primary_dark_material_dark</color>
+    <color name="colorPageExtraNight">@color/primary_dark_material_dark</color>
+    <color name="recyclerViewItemBackgroundColorExtraNight">@color/primary_dark_material_dark
+    </color>
+    <color name="textOnlyTextColorExtraNight">#fff</color>
+    <color name="imageButtonColorExtraNight">@color/primary_dark_material_dark</color>
+    <color name="imageButtonIconColorExtraNight">#fff</color>
+
+    <color name="dayDefaultPrimary">@color/primary_material_light</color>
+    <color name="dayDefaultPrimaryDark">@color/primary_dark_material_light</color>
+    <color name="nightDefaultPrimary">@color/primary_material_dark</color>
+    <color name="nightDefaultPrimaryDark">@color/primary_dark_material_dark</color>
+    <color name="dayDefaultPageBackground">@color/background_material_light</color>
+    <color name="nightDefaultPageBackground">@color/background_material_dark</color>
+    <color name="dayDefaultTextColor">@color/abc_primary_text_material_light</color>
+    <color name="dayDefaultSecondaryTextColor">@color/abc_secondary_text_material_light</color>
+    <color name="nightDefaultTextColor">@color/abc_primary_text_material_dark</color>
+    <color name="nightDefaultSecondaryTextColor">@color/abc_secondary_text_material_dark</color>
+</resources>

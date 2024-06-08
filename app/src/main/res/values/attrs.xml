@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="titleBarColor" format="reference" />
+    <attr name="textColor" format="reference" />
+    <attr name="pageColor" format="reference" />
+    <attr name="recyclerViewItemBackgroundColor" format="reference" />
+    <attr name="recyclerViewItemTextColor" format="reference" />
+    <attr name="textOnlyBackgroundColor" format="reference" />
+    <attr name="textOnlyTextColor" format="reference" />
+    <attr name="imageButtonColor" format="reference" />
+    <attr name="imageButtonIconColor" format="reference" />
+    <attr name="titleBarTextColor" format="reference" />
+    <attr name="titleBarHintColor" format="reference" />
+</resources>

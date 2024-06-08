@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:fitsSystemWindows="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:toolbarId="@+id/toolbar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AlertDialog.AppCompat.Light">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/addressAndSearchBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/findOnPageToolbar"
+                        android:hint="Website or search query"
+                        android:inputType="textUri"
+                        android:textColor="?attr/titleBarTextColor"
+                        android:textColorHint="?attr/titleBarHintColor" />
+
+                    <RelativeLayout
+                        android:id="@+id/findOnPageToolbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/closeFindOnPage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="?attr/imageButtonColor"
+                            android:src="@drawable/ic_baseline_arrow_back_24px"
+                            android:tint="?attr/imageButtonIconColor" />
+
+                        <EditText
+                            android:id="@+id/findOnPageEditText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/closeFindOnPage"
+                            android:hint="Find on page"
+                            android:textColor="?attr/titleBarTextColor"
+                            android:textColorHint="?attr/titleBarHintColor" />
+
+                        <ImageButton
+                            android:id="@+id/findPreviousOnPage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@id/findNextOnPage"
+                            android:backgroundTint="?attr/imageButtonColor"
+                            android:src="@drawable/ic_baseline_expand_less_24px"
+                            android:tint="?attr/imageButtonIconColor" />
+
+                        <ImageButton
+                            android:id="@+id/findNextOnPage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:backgroundTint="?attr/imageButtonColor"
+                            android:src="@drawable/ic_baseline_expand_more_24px"
+                            android:tint="?attr/imageButtonIconColor" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_baseline_text_format_24px"
+        android:tint="@color/fabIconColor"
+        app:layout_anchor="@id/siteContentNestedScrollView"
+        app:layout_anchorGravity="bottom|end" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/siteContentNestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addressAndSearchBar"
+        android:background="?attr/pageColor"
+        android:scrollbarSize="4dp"
+        android:scrollbars="vertical"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+        <TextView
+            android:id="@+id/siteContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginVertical="@dimen/activity_vertical_margin"
+            android:textColor="?attr/textOnlyTextColor"
+            android:textIsSelectable="true" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

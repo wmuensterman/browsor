@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".ChooseWebviewActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AlertDialog.AppCompat.Light">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Site settings"
+                android:textColor="?attr/titleBarTextColor" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
+        android:background="?attr/pageColor"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".ScrollingActivityTest">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginVertical="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/urlToOpenInWebview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginVertical="@dimen/activity_vertical_margin"
+                android:text="Open in a webview" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/moreSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:elevation="0dp"
+                    android:text="More settings"
+                    android:textColor="?attr/colorAccent" />
+
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/textOrFormat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/textOnly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Text only" />
+
+                <RadioButton
+                    android:id="@+id/allowFormatting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WebView" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/imageCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Images" />
+
+            <CheckBox
+                android:id="@+id/scriptCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JavaScript" />
+
+            <CheckBox
+                android:id="@+id/zoomCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zooming" />
+
+            <Button
+                android:id="@+id/openInWebview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?attr/colorAccent"
+                android:text="Change this page"
+                android:textColor="@color/fabIconColor" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

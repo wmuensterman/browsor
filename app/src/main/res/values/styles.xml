@@ -1,0 +1,117 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppThemeDay" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDay</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDayDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="imageButtonColor">@color/imageButtonColorDay</item>
+        <item name="imageButtonIconColor">@color/imageButtonIconColorDay</item>
+        <item name="pageColor">@color/colorPageDay</item>
+        <item name="textOnlyTextColor">@color/textOnlyTextColorDay</item>
+        <item name="recyclerViewItemBackgroundColor">@color/colorPrimaryDay
+        </item>
+        <item name="titleBarTextColor">@color/textOnlyTextColorDay</item>
+        <item name="titleBarHintColor">@color/dayDefaultSecondaryTextColor</item>
+    </style>
+
+    <style name="AppThemeBaby" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryBaby</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBaby</item>
+        <item name="colorAccent">@color/colorAccentBaby</item>
+        <item name="imageButtonColor">@color/imageButtonColorBaby</item>
+        <item name="imageButtonIconColor">@color/imageButtonIconColorBaby</item>
+        <item name="pageColor">@color/colorPageDay</item>
+        <item name="textOnlyTextColor">@color/textOnlyTextColorDay</item>
+        <item name="recyclerViewItemBackgroundColor">@color/colorPrimaryDay
+        </item>
+        <item name="titleBarTextColor">@color/textOnlyTextColorNight</item>
+        <item name="titleBarHintColor">@color/nightDefaultSecondaryTextColor</item>
+    </style>
+
+    <style name="AppThemeHotdog" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryHotdog</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkHotdog</item>
+        <item name="colorAccent">@color/colorAccentHotdog</item>
+        <item name="imageButtonColor">@color/imageButtonColorHotdog</item>
+        <item name="imageButtonIconColor">@color/imageButtonIconColorHotdog</item>
+        <item name="pageColor">@color/colorPageHotdog</item>
+        <item name="textOnlyTextColor">@color/textOnlyTextColorDay</item>
+        <item name="recyclerViewItemBackgroundColor">@color/recyclerViewItemBackgroundColorHotdog
+        </item>
+        <item name="titleBarTextColor">@color/textOnlyTextColorNight</item>
+        <item name="titleBarHintColor">@color/nightDefaultSecondaryTextColor</item>
+    </style>
+
+    <style name="AppThemeExtraDay" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryExtraDay</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkExtraDay</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="imageButtonColor">@color/imageButtonColorExtraDay</item>
+        <item name="imageButtonIconColor">@color/imageButtonIconColorExtraDay</item>
+        <item name="pageColor">@color/colorPageExtraDay</item>
+        <item name="textOnlyTextColor">@color/textOnlyTextColorExtraDay</item>
+        <item name="recyclerViewItemBackgroundColor">@color/recyclerViewItemBackgroundColorDay
+        </item>
+        <item name="titleBarTextColor">@color/textOnlyTextColorExtraDay</item>
+        <item name="titleBarHintColor">@color/dayDefaultSecondaryTextColor</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDay</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDay</item>
+    </style>
+
+    <style name="AppThemeNight" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryNight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkNight</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="imageButtonColor">@color/imageButtonColorNight</item>
+        <item name="imageButtonIconColor">@color/imageButtonIconColorNight</item>
+        <item name="pageColor">@color/colorPageNight</item>
+        <item name="textOnlyTextColor">@color/textOnlyTextColorNight</item>
+        <item name="recyclerViewItemBackgroundColor">@color/recyclerViewItemBackgroundColorNight
+        </item>
+        <item name="titleBarTextColor">@color/textOnlyTextColorNight</item>
+        <item name="titleBarHintColor">@color/nightDefaultSecondaryTextColor</item>
+    </style>
+
+    <style name="AppThemeExtraNight" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryExtraNight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkExtraNight</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="imageButtonColor">@color/imageButtonColorExtraNight</item>
+        <item name="imageButtonIconColor">@color/imageButtonIconColorExtraNight</item>
+        <item name="pageColor">@color/colorPageExtraNight</item>
+        <item name="textOnlyTextColor">@color/textOnlyTextColorExtraNight</item>
+        <item name="recyclerViewItemBackgroundColor">@color/nightDefaultPrimaryDark
+        </item>
+        <item name="titleBarTextColor">@color/textOnlyTextColorExtraNight</item>
+        <item name="titleBarHintColor">@color/nightDefaultSecondaryTextColor</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/nightDefaultPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/nightDefaultPrimaryDark</item>
+    </style>
+
+    <style name="AppThemeDay.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme_AppCompat_Light_Dialog_Delete" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme_AppCompat_Dialog_Delete" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
