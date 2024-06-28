@@ -1,4 +1,4 @@
-Available on Google Play.
+Install through the apk file or through Google Play.
 https://play.google.com/store/apps/details?id=com.trim.web.browser&hl=en_US
 
 Browsor lets you quickly toggle images and JavaScript. You can also load text-only webpages.
